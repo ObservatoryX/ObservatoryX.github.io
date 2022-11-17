@@ -33,7 +33,7 @@
   <!-- feed -->
   <!-- 页面元数据 -->
   <title>Matlab 学习札记 - ObservatoryX</title>
-  <meta name="keywords" content="null">
+  <meta name="keywords" content="Notes,MATLAB,null">
   <meta desc name="description" content="Preamble本博文主要记录一些在学习 Matlab 时的一些指令和公式，方便自己回看和复习各种指令以及相关知识。
 使用指南
 本文 Code block 中的注释采用 C++ 单行注释样式，即” &#x2F;&#x2F; “
@@ -49,6 +49,8 @@
 <meta property="article:published_time" content="2022-01-20T04:00:00.000Z">
 <meta property="article:modified_time" content="2022-11-16T14:45:40.000Z">
 <meta property="article:author" content="Simon Chen">
+<meta property="article:tag" content="Notes">
+<meta property="article:tag" content="MATLAB">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG">
   <style>
@@ -1746,7 +1748,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_2689.JPG","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1668655660111),
+    lastupdate: new Date(1668655794717),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2727,7 +2729,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>检索方式如下：</p>
 <p><strong>Type 1</strong></p>
 <p><code>&gt;&gt; A(3,2)</code> &#x2F;&#x2F;第三行第二列，即 $h$</p>
-<p><code>&gt;&gt; A([1 3],[1 3])</code> &#x2F;&#x2F;逗号前为 Row，逗号后为 Column；调取第 1、3 条 Row 和第 1、3 条 Column 的交集形成矩阵：<br>$$<br>\begin{bmatrix}<br>a  &amp; c\<br>g  &amp; i<br>\end{bmatrix}<br>$$</p>
+<p><code>&gt;&gt; A([1 3],[1 3])</code> &#x2F;&#x2F;逗号前为 Row，逗号后为 Column；调取第 1、3 条 Row 和第 1、3 条 Column 的交集形成矩阵：<br>$$<br>\begin{bmatrix}<br>a  &amp; c\\<br>g  &amp; i<br>\end{bmatrix}<br>$$</p>
 <p><strong>Type2:</strong></p>
 <p><code>&gt;&gt; A(8)</code> &#x2F;&#x2F;按照 “先由上至下，后由左至右” 的顺序检索第 8 个，即为$f$</p>
 <p><code>&gt;&gt; A([1,3,5])</code> &#x2F;&#x2F;按照上述顺序检索第 1, 3, 5 个，即为 $a, g, e$</p>
@@ -2770,6 +2772,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Notes/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Notes</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MATLAB/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>MATLAB</p></a></div>
+  <span hidden itemprop="keywords">Notes MATLAB</span>
+
 
         
       
@@ -3614,7 +3620,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/","sameAs":["https://github.com/RitsukiP"],"description":"测试站点"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://ObservatoryX.github.io/","name":"ObservatoryX"}},{"@type":"ListItem","position":3,"item":{"@id":"https://ObservatoryX.github.io/2022/01/20/Matlab-学习札记/","name":"Matlab 学习札记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","keywords":null,"description":"测试站点","author":{"@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/","description":"测试站点"},"publisher":{"@type":"Organization","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://ObservatoryX.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Matlab 学习札记","description":"Preamble本博文主要记录一些在学习 Matlab 时的一些指令和公式，方便自己回看和复习各种指令以及相关知识。\n使用指南\n本文 Code block 中的注释采用 C++ 单行注释样式，即” &#x2F;&#x2F; “\n例子中的 Code block 为在 MATLAB R2021a 环境下的 Command Window 显示内容\n本文在矩阵部分内容遵从中国大陆的命名方式，即 Row 为行，Column 为列\n由于内容较为庞大，建议在桌面端浏览本页面，请善用目录\n部分内容可能过时或出现纰漏，且不展开完整的指令库，如遇问题请求助 Documentaion\n\n本文将不断更新，迭代信息请参考更新日期","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://observatoryx.github.io/2022/01/20/Matlab-%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/"},"author":{"@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/"},"publisher":{"@type":"Organization","name":"ObservatoryX","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},"url":"https://observatoryx.github.io/2022/01/20/Matlab-%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/","wordCount":305,"datePublished":"2022-01-20T04:00:00.000Z","dateModified":"2022-11-16T14:45:40.000Z","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/","sameAs":["https://github.com/RitsukiP"],"description":"测试站点"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://ObservatoryX.github.io/","name":"ObservatoryX"}},{"@type":"ListItem","position":3,"item":{"@id":"https://ObservatoryX.github.io/2022/01/20/Matlab-学习札记/","name":"Matlab 学习札记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","keywords":null,"description":"测试站点","author":{"@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/","description":"测试站点"},"publisher":{"@type":"Organization","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://ObservatoryX.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Matlab 学习札记","description":"Preamble本博文主要记录一些在学习 Matlab 时的一些指令和公式，方便自己回看和复习各种指令以及相关知识。\n使用指南\n本文 Code block 中的注释采用 C++ 单行注释样式，即” &#x2F;&#x2F; “\n例子中的 Code block 为在 MATLAB R2021a 环境下的 Command Window 显示内容\n本文在矩阵部分内容遵从中国大陆的命名方式，即 Row 为行，Column 为列\n由于内容较为庞大，建议在桌面端浏览本页面，请善用目录\n部分内容可能过时或出现纰漏，且不展开完整的指令库，如遇问题请求助 Documentaion\n\n本文将不断更新，迭代信息请参考更新日期","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://observatoryx.github.io/2022/01/20/Matlab-%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/"},"author":{"@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/"},"publisher":{"@type":"Organization","name":"ObservatoryX","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},"url":"https://observatoryx.github.io/2022/01/20/Matlab-%E5%AD%A6%E4%B9%A0%E6%9C%AD%E8%AE%B0/","wordCount":305,"datePublished":"2022-01-20T04:00:00.000Z","dateModified":"2022-11-16T14:45:40.000Z","keywords":"Notes,MATLAB","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}}]</script>
 
 
 
