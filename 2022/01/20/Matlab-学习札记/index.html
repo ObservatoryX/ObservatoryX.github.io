@@ -1746,7 +1746,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_2689.JPG","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1668654815588),
+    lastupdate: new Date(1668655660111),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2722,7 +2722,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><p>方法二：使用 A(n) 来检索矩阵名为 A 的 Matrix，以 先由上至下，后由左至右 的顺寻编号。</p>
 </li>
 </ul>
-<p>$$<br>A &#x3D; \begin{bmatrix}<br>a  &amp; b &amp; c\<br>d  &amp; e &amp; f\<br>g  &amp; h &amp; i<br>\end{bmatrix}<br>$$</p>
+<p>$$<br>A &#x3D; \begin{bmatrix}<br>a  &amp; b &amp; c\\<br>d  &amp; e &amp; f\\<br>g  &amp; h &amp; i<br>\end{bmatrix}<br>$$</p>
 <p>从 1 号到 9 号 其顺序为：<br>$$a, d, g, b, e, h, c, f, i$$</p>
 <p>检索方式如下：</p>
 <p><strong>Type 1</strong></p>
@@ -2731,7 +2731,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>Type2:</strong></p>
 <p><code>&gt;&gt; A(8)</code> &#x2F;&#x2F;按照 “先由上至下，后由左至右” 的顺序检索第 8 个，即为$f$</p>
 <p><code>&gt;&gt; A([1,3,5])</code> &#x2F;&#x2F;按照上述顺序检索第 1, 3, 5 个，即为 $a, g, e$</p>
-<p><code>&gt;&gt; A([1 3;1 3])</code> &#x2F;&#x2F;按照上述顺序，形成矩阵：<br>$$<br>\begin{bmatrix}<br>a  &amp; g\<br>a  &amp; g<br>\end{bmatrix}<br>$$</p>
+<p><code>&gt;&gt; A([1 3;1 3])</code> &#x2F;&#x2F;按照上述顺序，形成矩阵：<br>$$<br>\begin{bmatrix}<br>a  &amp; g\\<br>a  &amp; g<br>\end{bmatrix}<br>$$</p>
 <h3 id="替换矩阵元素-Replacing-Entries"><a href="#替换矩阵元素-Replacing-Entries" class="headerlink" title="替换矩阵元素 Replacing Entries"></a>替换矩阵元素 Replacing Entries</h3><p>直接将某个值赋给矩阵的元素：</p>
 <p><code>A(x,y)= K</code></p>
 <p>将 K 赋给 A 矩阵中第 x 行，第 y 列的元素</p>
@@ -3428,6 +3428,60 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
+
+        <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = "https://unpkg.com/volantis-static@0.0.1654736714924/libs/mathjax/es5/tex-mml-chtml.js";
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typesetPromise();
+  }
+</script>
+
+
 
 </pjax>
 
