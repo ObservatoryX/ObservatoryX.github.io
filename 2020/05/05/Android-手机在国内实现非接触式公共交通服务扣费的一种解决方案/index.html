@@ -34,13 +34,13 @@
   <!-- 页面元数据 -->
   <title>Android 手机在国内实现非接触式公共交通服务扣费的一种解决方案 - ObservatoryX</title>
   <meta name="keywords" content="null">
-  <meta desc name="description" content="测试站点 - Simon Chen - ObservatoryX">
+  <meta desc name="description" content="前言Apple 在 2020 年初开放了对于京津冀互联互通卡、深圳通（岭南通）和交通联合公交卡的支持，意味着 iOS 用户目前可以在未解锁手机的状态下实现一触即付，是目前最方便的手机端公交卡解决方案。 - Simon Chen - ObservatoryX">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android 手机在国内实现非接触式公共交通服务扣费的一种解决方案">
 <meta property="og:url" content="https://observatoryx.github.io/2020/05/05/Android-%E6%89%8B%E6%9C%BA%E5%9C%A8%E5%9B%BD%E5%86%85%E5%AE%9E%E7%8E%B0%E9%9D%9E%E6%8E%A5%E8%A7%A6%E5%BC%8F%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E6%9C%8D%E5%8A%A1%E6%89%A3%E8%B4%B9%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="ObservatoryX">
-<meta property="og:description" content="前言Apple 在 2020 年初开放了对于京津冀互联互通卡、深圳通（岭南通）和交通联合公交卡的支持，意味着 iOS 用户目前可以在未解锁手机的状态下实现一触即付，是目前最方便的手机端公交卡解决方案。 传统的公共交通卡使用形态就是“一触即过”，所以我心目中手机端能代替公交卡使用的解决方案必须能达到近似或媲美普通公交卡才行。 但是目前 Android 设备并没有一个泛机型的一个解决方案来实现最优雅的">
+<meta property="og:description" content="前言Apple 在 2020 年初开放了对于京津冀互联互通卡、深圳通（岭南通）和交通联合公交卡的支持，意味着 iOS 用户目前可以在未解锁手机的状态下实现一触即付，是目前最方便的手机端公交卡解决方案。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG">
 <meta property="article:published_time" content="2020-05-05T04:00:00.000Z">
@@ -1743,10 +1743,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_2689.JPG","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1669805951407),
+    lastupdate: new Date(1669812664972),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
-      for_post: ["toc"],
+      for_post: ["blogger","toc"],
       webinfo: {
         lastupd: {
           enable: true,
@@ -2565,6 +2565,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Apple 在 2020 年初开放了对于京津冀互联互通卡、深圳通（岭南通）和交通联合公交卡的支持，意味着 iOS 用户目前可以在未解锁手机的状态下实现一触即付，是目前最方便的手机端公交卡解决方案。</p>
+<span id="more"></span>
+
 <p>传统的公共交通卡使用形态就是“一触即过”，所以我心目中手机端能代替公交卡使用的解决方案必须能达到近似或媲美普通公交卡才行。</p>
 <p>但是目前 Android 设备并没有一个泛机型的一个解决方案来实现最优雅的手机刷公交的方案。</p>
 <p>MiPay 或者 HaweiPay 都是通过内部定制和公司与交通部门的合作实现的。（当然 Apple Pay 也不例外）</p>
@@ -2595,19 +2597,33 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- 版权声明组件 -->
       
         
-          <div class='copyright'>
-            <blockquote>
+          
+          <div class="copyright license">
+            <div class="license-title">Android 手机在国内实现非接触式公共交通服务扣费的一种解决方案</div>
+            <div class="license-link"><a href="https://observatoryx.github.io/2020/05/05/Android-手机在国内实现非接触式公共交通服务扣费的一种解决方案/">https://observatoryx.github.io/2020/05/05/Android-手机在国内实现非接触式公共交通服务扣费的一种解决方案/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">Simon Chen</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2020年5月5日</div>
+              </div>
               
-                
-                  <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
-
-                
+              <div class="license-meta-item">
+                <div class="license-meta-title">更新于</div>
+                <div class="license-meta-text">2022年11月16日</div>
+              </div>
               
-                
-                  <p>本文永久链接是：<a href="https://observatoryx.github.io/2020/05/05/Android-手机在国内实现非接触式公共交通服务扣费的一种解决方案/">https://observatoryx.github.io/2020/05/05/Android-手机在国内实现非接触式公共交通服务扣费的一种解决方案/</a></p>
-                
               
-            </blockquote>
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh#" target="_blank">CC BY-NC-SA 4.0</a></div>
+              </div>
+            </div>
+            <div class="license-statement">署名-非商业性使用-相同方式共享 4.0 国际。</div>
           </div>
         
       
@@ -2643,39 +2659,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="-mob-share-list share-body">
     
       
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://observatoryx.github.io/2020/05/05/Android-%E6%89%8B%E6%9C%BA%E5%9C%A8%E5%9B%BD%E5%86%85%E5%AE%9E%E7%8E%B0%E9%9D%9E%E6%8E%A5%E8%A7%A6%E5%BC%8F%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E6%9C%8D%E5%8A%A1%E6%89%A3%E8%B4%B9%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/&title=Android 手机在国内实现非接触式公共交通服务扣费的一种解决方案 - ObservatoryX&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
     
       
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://observatoryx.github.io/2020/05/05/Android-%E6%89%8B%E6%9C%BA%E5%9C%A8%E5%9B%BD%E5%86%85%E5%AE%9E%E7%8E%B0%E9%9D%9E%E6%8E%A5%E8%A7%A6%E5%BC%8F%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E6%9C%8D%E5%8A%A1%E6%89%A3%E8%B4%B9%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/&title=Android 手机在国内实现非接触式公共交通服务扣费的一种解决方案 - ObservatoryX&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
     
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://observatoryx.github.io/2020/05/05/Android-%E6%89%8B%E6%9C%BA%E5%9C%A8%E5%9B%BD%E5%86%85%E5%AE%9E%E7%8E%B0%E9%9D%9E%E6%8E%A5%E8%A7%A6%E5%BC%8F%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E6%9C%8D%E5%8A%A1%E6%89%A3%E8%B4%B9%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/&title=Android 手机在国内实现非接触式公共交通服务扣费的一种解决方案 - ObservatoryX&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
       
     
       
@@ -2711,7 +2697,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <a class='next' href='/2020/04/25/So-you-don-t-want-to-pay-for-just-one-article/'>
           <p class='title'>So you don't want to pay for just one article<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>本篇博客讨论如何通过一些简便的手段绕过部分新闻传媒网站&#x2F;文章创作网站的付费墙（Paywall）
-What is paywall?在阅读一些新闻媒体网站的时候，网站会将部分文章设置付费墙...</p>
+
+
+What is paywall?在阅读一些新闻媒体网站的时候，网站会将部分文章设置付...</p>
         </a>
       
     </div>
@@ -2749,6 +2737,38 @@ What is paywall?在阅读一些新闻媒体网站的时候，网站会将部分�
     
     
       
+<section class="widget blogger desktop pjax">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box circle' href='/about/'>
+          <img no-lazy src='https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_9989.PNG'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>Simon Chen</h2>
+        
+        
+          <p>Part-time student, full-time epicurean :)</p>
+
+        
+        
+      </div>
+    
+    
+  </div>
+</section>
+
+    
+  
+
+  
+    
+    
+      
     
   
 
@@ -2773,10 +2793,6 @@ What is paywall?在阅读一些新闻媒体网站的时候，网站会将部分�
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2902,7 +2918,7 @@ What is paywall?在阅读一些新闻媒体网站的时候，网站会将部分�
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © 2017-2021 XXX</a></p>
+        <p><a href="/">Copyright © 2020-2022 Simon Chen</a></p>
 
         </div>
       
@@ -3399,7 +3415,7 @@ What is paywall?在阅读一些新闻媒体网站的时候，网站会将部分�
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/","sameAs":["https://github.com/RitsukiP"],"description":"测试站点"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://ObservatoryX.github.io/","name":"ObservatoryX"}},{"@type":"ListItem","position":3,"item":{"@id":"https://ObservatoryX.github.io/2020/05/05/Android-手机在国内实现非接触式公共交通服务扣费的一种解决方案/","name":"Android 手机在国内实现非接触式公共交通服务扣费的一种解决方案"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","keywords":null,"description":"测试站点","author":{"@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/","description":"测试站点"},"publisher":{"@type":"Organization","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://ObservatoryX.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Android 手机在国内实现非接触式公共交通服务扣费的一种解决方案","description":"测试站点","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://observatoryx.github.io/2020/05/05/Android-%E6%89%8B%E6%9C%BA%E5%9C%A8%E5%9B%BD%E5%86%85%E5%AE%9E%E7%8E%B0%E9%9D%9E%E6%8E%A5%E8%A7%A6%E5%BC%8F%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E6%9C%8D%E5%8A%A1%E6%89%A3%E8%B4%B9%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"},"author":{"@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/"},"publisher":{"@type":"Organization","name":"ObservatoryX","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},"url":"https://observatoryx.github.io/2020/05/05/Android-%E6%89%8B%E6%9C%BA%E5%9C%A8%E5%9B%BD%E5%86%85%E5%AE%9E%E7%8E%B0%E9%9D%9E%E6%8E%A5%E8%A7%A6%E5%BC%8F%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E6%9C%8D%E5%8A%A1%E6%89%A3%E8%B4%B9%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/","wordCount":0,"datePublished":"2020-05-05T04:00:00.000Z","dateModified":"2022-11-16T14:01:28.000Z","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/","sameAs":["https://github.com/RitsukiP"],"description":"测试站点"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://ObservatoryX.github.io/","name":"ObservatoryX"}},{"@type":"ListItem","position":3,"item":{"@id":"https://ObservatoryX.github.io/2020/05/05/Android-手机在国内实现非接触式公共交通服务扣费的一种解决方案/","name":"Android 手机在国内实现非接触式公共交通服务扣费的一种解决方案"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","keywords":null,"description":"测试站点","author":{"@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/","description":"测试站点"},"publisher":{"@type":"Organization","name":"ObservatoryX","url":"https://ObservatoryX.github.io/","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://ObservatoryX.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Android 手机在国内实现非接触式公共交通服务扣费的一种解决方案","description":"前言Apple 在 2020 年初开放了对于京津冀互联互通卡、深圳通（岭南通）和交通联合公交卡的支持，意味着 iOS 用户目前可以在未解锁手机的状态下实现一触即付，是目前最方便的手机端公交卡解决方案。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://observatoryx.github.io/2020/05/05/Android-%E6%89%8B%E6%9C%BA%E5%9C%A8%E5%9B%BD%E5%86%85%E5%AE%9E%E7%8E%B0%E9%9D%9E%E6%8E%A5%E8%A7%A6%E5%BC%8F%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E6%9C%8D%E5%8A%A1%E6%89%A3%E8%B4%B9%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"},"author":{"@type":"Person","name":"Simon Chen","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG"},"url":"https://ObservatoryX.github.io/"},"publisher":{"@type":"Organization","name":"ObservatoryX","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}},"url":"https://observatoryx.github.io/2020/05/05/Android-%E6%89%8B%E6%9C%BA%E5%9C%A8%E5%9B%BD%E5%86%85%E5%AE%9E%E7%8E%B0%E9%9D%9E%E6%8E%A5%E8%A7%A6%E5%BC%8F%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A%E6%9C%8D%E5%8A%A1%E6%89%A3%E8%B4%B9%E7%9A%84%E4%B8%80%E7%A7%8D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/","wordCount":100,"datePublished":"2020-05-05T04:00:00.000Z","dateModified":"2022-11-16T14:01:28.000Z","image":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/ObservatoryX/Blogpic/master/IMG_0326.JPG","width":192,"height":192}}]</script>
 
 
 
