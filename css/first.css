@@ -93,7 +93,7 @@ body.modal-active {
   }
 }
 a {
-  color: #ef9a9a;
+  color: #e57373;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.28s ease;
